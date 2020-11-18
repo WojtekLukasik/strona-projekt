@@ -1,0 +1,478 @@
+/* 
+html
+{
+    overflow-y:scroll;
+}  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    margin:0; 
+    padding:0; 
+    font-size:13px; 
+    font-family:Georgia, "Times New Roman", Times, serif; 
+    color:#919191; 
+    background-color:#232323;
+    /* max-width: 100%; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.clear:after
+{
+    content:"."; 
+    display:block; 
+    height:0; 
+    clear:both; 
+    visibility:hidden; 
+    line-height:0;
+}
+
+.clear
+{
+    display:block; 
+    clear:both;
+}
+
+html[xmlns] 
+
+.clear
+{
+    display:block;
+}
+
+* html .clear
+{
+    height:1%;
+}
+
+a
+{
+    outline:none; 
+    text-decoration:none;
+}
+
+code
+{
+    font-weight:normal; 
+    font-style:normal; 
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.fl_left
+{
+    float:left;
+}
+
+.fl_right
+{
+    float:right;
+}
+
+address, article, aside, figcaption, figure, footer, header, nav, section
+{
+    display:block; margin:0; padding:0;
+}
+
+div.wrapper
+{
+    display:block; width:100%; margin:0; padding:0; text-align:left;
+}
+
+.row1, .row1 a
+{
+    color:white; background-color:#236192;
+}
+
+.row2
+{
+    color:#979797; background-color:#FFFFFF;
+    flex-grow: 1;
+}
+
+.row2 a
+{
+    color:#78be20; 
+    background-color:#FFFFFF;
+}
+
+.row4
+{
+    background-color: #0c2340;
+    color: #78be20;
+}
+
+#header, #container, #footer, #copyright
+{
+    display:block; 
+    max-width:960px;
+    margin:0 auto;
+}
+
+nav ul
+{
+    margin:0; 
+    padding:0; 
+    list-style:none;
+}
+
+h1, h2
+{
+    margin:0; 
+    padding:0; 
+    font-size:32px; 
+    font-weight:normal; 
+    line-height:normal;
+}
+
+
+form, fieldset, legend
+{
+    margin:0; 
+    padding:0; 
+    border:none;
+}
+
+legend
+{
+    display:none;
+}
+
+input, textarea, select
+{
+    font-size:12px; 
+    font-family:Georgia,"Times New Roman",Times,serif;
+}
+
+.one_third
+{
+    display:block; 
+    float:left; 
+    margin:0 30px 0 0;
+}
+
+.one_third
+{
+    width:300px;
+}
+
+.lastbox
+{
+    margin-right:0;
+}
+
+#header
+{
+    padding:20px 0;
+}
+
+#header #hgroup
+{
+    float:left; 
+    margin:0 0 20px 0;
+}
+
+#header #hgroup h1, #header #hgroup h2
+{
+    font-weight:normal; 
+    font-style:normal; 
+    text-transform:none;
+}
+
+#header #hgroup h1
+{
+    font-size:36px;
+}
+
+#header nav
+{
+    display:block; 
+    float:right; 
+    margin:10px 0 0 0; 
+    padding:20px 0; 
+    color:#C0BAB6; 
+    background-color:#0c2340;
+}
+
+#header nav ul
+{
+    padding:0 20px;
+}
+
+#header nav li
+{
+    display:inline; 
+    margin-right:25px; 
+    text-transform:uppercase;
+}
+
+#header nav li.last
+{
+    margin-right:0;
+}
+
+#header nav li a
+{
+    color:white; 
+    background-color:
+    #0c2340;
+}
+
+#header nav li a:hover
+{
+    color:#78be20; 
+    background-color:
+    #0c2340;
+}
+
+#container
+{
+    padding:30px 0; 
+    min-height: 750px;
+}
+
+#container section
+{
+    display:block; 
+    width:100%; 
+    margin:0 0 30px 0; 
+    padding:0;
+}
+
+#container .last
+{
+    margin:0;
+}
+
+#container .more
+{
+    text-align:right;
+}
+
+#container #homepage
+{
+    display:block; 
+    width:100%; 
+    line-height:1.8em;
+}
+
+#container #homepage #services article figure img
+{
+    margin:0 0 15px 0; 
+    padding:4px; 
+    border:1px solid #D6D6D6;
+}
+
+#container #homepage #services article figure h2
+{
+    font-size:14px; 
+    font-weight:bold;
+}
+
+#container #homepage #intro article figure img
+{
+    float:right; 
+    margin:0 0 10px 0; 
+    padding:4px; 
+    border:1px solid #D6D6D6;
+}
+
+#copyright
+{
+    padding:20px 0;
+}
+
+#copyright p
+{
+    margin:0; padding: 0;
+}
+
+span
+{
+    color:#78be20;
+}
+
+#historytext
+{
+    font-size: 16px;
+    color: rgb(83, 80, 80)
+}
+
+#floated
+{
+    width: 275px;
+    float: left;
+
+}
+
+#autortext
+{
+    font-size: 16px;
+}
+
+#container #gamepanel
+{
+    margin-top: 20px;
+    text-align: center;
+    align-content: center;
+    color: rgb(116, 107, 107);
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#startbutton
+{
+    width: 300px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    color: rgb(116, 107, 107);
+    border: 5px solid rgb(116, 107, 107); 
+    margin-top: 20px;
+    margin-left: 300px;
+
+}
+
+#startbutton:hover
+{
+    color:#78be20;
+    border-color: #78be20;
+    cursor: pointer;
+}
+
+#choicebutton1
+{
+    width: 300px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(116, 107, 107);
+    border: 5px solid rgb(116, 107, 107); 
+    display: block;
+    position: fixed;
+    margin-left: 170px;
+
+}
+
+#choicebutton2
+{
+    width: 300px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(116, 107, 107);
+    border: 5px solid rgb(116, 107, 107); 
+    display: block;
+    position: fixed;
+    margin-left: 490px;
+    clear: both;
+}
+
+#choicebutton3
+{
+    width: 300px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(116, 107, 107);
+    border: 5px solid rgb(116, 107, 107); 
+    display: block;
+    position: fixed;
+    margin-top:100px;
+    margin-left:170px;
+}
+
+#choicebutton4
+{
+    width: 300px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(116, 107, 107);
+    border: 5px solid rgb(116, 107, 107); 
+    display: block;
+    position: fixed;
+    margin-top:100px;
+    margin-left:490px;
+}
+
+#choicebutton1:hover
+{
+    color:#78be20;
+    border-color: #78be20;
+    cursor: pointer;
+}
+
+#choicebutton2:hover
+{
+    color:#78be20;
+    border-color: #78be20;
+    cursor: pointer;
+}
+
+#choicebutton3:hover
+{
+    color:#78be20;
+    border-color: #78be20;
+    cursor: pointer;
+}
+
+#choicebutton4:hover
+{
+    color:#78be20;
+    border-color: #78be20;
+    cursor: pointer;
+}
+
+#contactform
+{
+    width: 405px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: solid #78be20;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+input
+{
+    width: 300px;
+    background-color: #efefef;
+    color: #666;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+    box-sizing: border-box;
+}
+textarea
+{
+    box-sizing: border-box;
+    min-height: 200px;
+    min-width: 300px;
+}
+
+#subbutton
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Minnesota Timberwolves Fans</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">    
+        var numer = 1;
+
+
+        
+        function hideslide()
+        {
+            $("#slider").fadeOut(500);
+        }
+
+        function changeslide()
+        {
+        numer++; 
+        if(numer>4) numer=1;
+        var plik = "<img src=\"images/slajd" + numer + ".jpg\"/>"
+        document.getElementById("slider").innerHTML = plik;
+        $("#slider").fadeIn(500);          
+        setTimeout("changeslide()",5000);
+        setTimeout("hideslide()", 4500);
+        }
+        </script>
+
+
+    </head>
+    <body onload="changeslide()">
+        <div class="wrapper row1">
+            <header id="header" class="clear">
+                <div id="hgroup">
+                    <h1><a href="#">Minnesota</a></h1>
+                    <h1><span>Timber</span>wolves</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="history.html">Historia drużyny</a></li>
+                        <li><a href="gra.html">Mini gra</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li class="last"><a href="autor.html">O autorze</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="wrapper row2">
+            <div id="container" class="clear">               
+                <section id="slider" > </section>
+                    <div id="homepage">
+                        <section id="services" class="clear">
+                            <article class="one_third">
+                                <figure><a href="https://www.youtube.com/watch?v=TX2mbE_KTq4" target="_blank"><img src="images/karl-wywiad.jpg" width="290" height="180" alt=""></a>
+                                    <figcaption>
+                                      <h2>Wywiad z Karlem-Anthony Townsem</h2>
+                                      <p>W rozmowie z Adrianem Wojnarowskim Karl-Anthony Towns opowiada jak odejście Jimmyego Butlera wpłynęło na resztę drużyny.</p>
+                                    </figcaption>
+                                  </figure>
+                            </article>
+                            <article class="one_third">
+                                <figure><a href="https://www.youtube.com/watch?v=6BgJKC1vAV4" target="_blank"><img src="images/drose.jpg" width="290" height="180" alt=""></a>
+                                  <figcaption>
+                                    <h2>Rekord kariery Derricka Rose'a!</h2>
+                                    <p>Derrick Rose w meczu przeciwko Atlanta Hawks poprowadził Wolves do wygranej uzyskując rekordowe w swojej karierze 50 punktów.</p>
+                                  </figcaption>
+                                </figure>
+                            </article>
+                            <article class="one_third lastbox">
+                                <figure><a href="https://www.youtube.com/watch?v=cXilrpeEqHc" target="_blank" ><img src="images/best.jpg" width="290" height="180" alt=""></a>
+                                  <figcaption>
+                                    <h2>Najlepsze momenty poprzedniego sezony</h2>
+                                    <p>Kompilacja najlepszych momentów Minnesoty z sezonu 2017/2018. Koniecznie sprawdź!</p>
+                                  </figcaption>
+                                </figure>
+                              </article>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="wrapper row4">
+            <footer id="copyright" class="clear">
+              <p class="fl_left">Copyright &copy; 2019 - All Rights Reserved - Minnesota Timberwolves Fans</p>              
+            </footer>
+        </div>
+    </body>
+</html>
